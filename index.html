@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Conway's Game of Life</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div id="app">
+		<h1 id="header">Conway's Game of Life</h1>
+
+		<div id="controls">
+			<div class="horizontal-grid">
+				<button id="clear">Clear</button>
+				<button id="export">Export</button>
+				<button id="import">Import</button>
+				<div id="iterations">
+					<span>Iterations: <span id="counter">0</span></span>
+				</div>
+			</div>
+			<input type="file" id="fileInput" style="display:none;" accept=".txt" />
+			<div id="speed-controller">
+				<button id="toggle">Start</button>
+				<label for="speed">Speed:</label>
+				<input type="range" id="speed" min="50" max="1000" value="100">
+				<span id="speed-value">100 ms</span>
+			</div>
+
+		</div>
+
+		<div id="canvas-container">
+			<canvas id="canvas"></canvas>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html>
