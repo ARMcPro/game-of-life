@@ -10,10 +10,13 @@ const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const container = document.getElementById('canvas-container');
 
+const customSpeeds = [10, 25, 50, 75, 100, 150, 200, 250, 300, 400, 500, 600, 800, 1000];
+
+
 let liveCells = new Set();
 let isRunning = false;
 let iteration = 0;
-let speed = parseInt(speedSlider.value);
+let speed = 100;
 let cellSize = 20;
 let offsetX = 0;
 let offsetY = 0;
@@ -270,7 +273,7 @@ toggleButton.addEventListener("click", () => {
 clearButton.addEventListener("click", clearGrid);
 
 speedSlider.addEventListener("input", () => {
-	speed = parseInt(speedSlider.value);
+	speed = customSpeeds[parseInt(speedSlider.value)];
 	speedValueDisplay.textContent = `${speed} ms`;
 
 	clearInterval(loop);

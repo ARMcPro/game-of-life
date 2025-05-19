@@ -1,20 +1,13 @@
 html,
 body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	width: 100%;
-}
-
-body {
 	font-family: Arial, sans-serif;
 	background-color: #111;
 	color: #fff;
 	text-align: center;
-	padding: 0;
 	margin: 0;
-	width: 100%;
+	padding: 0;
 	height: 100%;
+	width: 100%;
 }
 
 #app {
@@ -41,11 +34,6 @@ h1 {
 	align-items: center;
 }
 
-#speed-controller {
-	background-color: #333;
-	margin-bottom: 10px;
-}
-
 button {
 	padding: 8px 12px;
 	transition: background-color 0.3s ease;
@@ -68,6 +56,7 @@ button:hover {
 
 #speed-controller {
 	background-color: #333;
+	margin-bottom: 10px;
 	padding: 8px 12px;
 	display: flex;
 	align-items: center;
@@ -92,7 +81,6 @@ button:hover {
 	min-width: 5.1ch;
 }
 
-
 #canvas-container {
 	flex: 1;
 	width: 100%;
@@ -105,7 +93,6 @@ button:hover {
 	display: block;
 	cursor: pointer;
 }
-
 
 #canvas:active {
 	cursor: grabbing;
