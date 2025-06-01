@@ -35,7 +35,6 @@ h1 {
 }
 
 button {
-	padding: 8px 12px;
 	transition: background-color 0.3s ease;
 	min-width: 9ch;
 }
@@ -47,7 +46,6 @@ input[type="range"] {
 	border: none;
 	color: #fff;
 	cursor: pointer;
-	font-size: 14px;
 }
 
 button:hover {
@@ -96,4 +94,45 @@ button:hover {
 
 #canvas:active {
 	cursor: grabbing;
+}
+
+@media screen and (orientation:portrait) {
+
+	h1 {
+		font-size: 4em;
+	}
+
+	button,
+	input[type="range"],
+	span,
+	label {
+		font-size: 32px;
+	}
+
+	input[type="range"] {
+		width: 20vw;
+	}
+
+	button {
+		padding: 18px 12px;
+	}
+}
+
+/* Landscape */
+@media screen and (orientation:landscape) {
+
+	button,
+	input[type="range"],
+	span,
+	label {
+		font-size: 14px;
+	}
+
+	input[type="range"] {
+		width: 100%;
+	}
+
+	button {
+		padding: 8px 12px;
+	}
 }
